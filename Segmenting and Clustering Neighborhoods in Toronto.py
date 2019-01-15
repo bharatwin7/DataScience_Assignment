@@ -30,6 +30,8 @@ print('Folium installed')
 print('Libraries imported.')
 
 
+# # Reading Wikipedia
+
 # In[105]:
 
 
@@ -40,6 +42,8 @@ wikipedia_page= requests.get(wikipedia_link).text
 # using beautiful soup to parse the HTML/XML codes.
 soup = BeautifulSoup(wikipedia_page,'xml')
 
+
+# # Extracting table info
 
 # In[106]:
 
@@ -116,6 +120,8 @@ for postcode_unique_element in unique_p:
     Neighbourhood_u.append(n_var)
 
 
+# # Creating Data Frame
+
 # In[107]:
 
 
@@ -148,6 +154,8 @@ geo_toronto = pd.read_csv('http://cocl.us/Geospatial_data')
 
 geo_toronto.head()
 
+
+# # Joining Two Data set
 
 # In[131]:
 
